@@ -42,8 +42,6 @@
 </template>
 
 <script>
-import useUid from "@/helpers/useUid.js";
-
 /**
  * @internal
  */
@@ -71,7 +69,7 @@ export default {
 	computed: {
 		draggableOptions() {
 			return {
-				id: useUid(),
+				id: this.id,
 				handle: true,
 				list: this.rows
 			};
